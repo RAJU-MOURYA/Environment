@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu+Condensed&display=swap'); 
+
+/* Basic CSS styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color:#112e42; */
+
+    background:#112e42  ;
+background-size: cover;
+}
+header {
+    width: 100%;
+    position: fixed;
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+nav a {
+    font-size: 1.2rem;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+nav a:hover{
+color: blue;}
+.hero-section {
+    height: 400px;
+    /* background-image: url('https://via.placeholder.com/1500x400'); */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#112e42;
+    
+}
+.hero-section h1 {
+    margin-top: 90px;
+    font-size: 3em;
+    text-align: center;
+    color: white;
+
+
+    font-size: 3.5rem;
+font-weight: 700;
+color: transparent;
+-webkit-text-stroke: .7px rgb(0, 119, 255);
+
+margin-bottom: 1rem;
+background-image: linear-gradient(rgb(0, 119, 255) ,rgb(0, 119, 255));
+background-repeat: no-repeat;
+-webkit-background-clip:text;
+background-position: -53rem 0;
+animation: homeBgText 6s linear infinite;
+animation-delay: 2s;
+}
+
+
+.hero-section h1::before {
+    content:'';
+position: absolute;
+top: 0;
+left: 0;
+width: 0;
+height: 100%;
+/* border-right: 2px solid rgb(0, 119, 255); */
+z-index: -1;
+animation: homeCursorText 6s linear infinite;
+animation-delay: 2s;
+}
+
+/* keyframe animation */
+
+@keyframes homeBgText {
+0%,
+10%,
+100% {
+    background-position: -73rem 0;
+}
+65%,
+85% {
+    background-position: 0 0;
+}
+}
+
+@keyframes homeCursorText {
+0%,
+10%,
+100% {
+    width: 0;
+}
+65%,
+78%,
+85% {
+    width: 100%;
+    opacity: 1;
+}
+75%,
+81%{
+    opacity: 0;
+}
+}
+
+
+
+
+.introduction {
+    color: white;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+.introduction h2{
+    font-size: 2.5rem;
+
+}
+.introduction p{
+    font-size: 1.3rem;
+}
+.introduction a{
+    font-size:1.3rem ;
+  color: #007bff;
+}
+.cta-button {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+.introduction{
+    margin-top: 100px;
+     
+}
+
+/* contact */
+
+/* .contact {
+
+    min-height: auto;
+    padding-bottom: 35rem;
+    justify-content: center;
+
+}
+.contact form {
+    max-width: 40rem;
+    
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact form .input-box{
+  display: inline-flex;
+  flex-direction:row;
+  gap: 1rem;
+}
+.contact form .input-box .input-field {
+    justify-content: center;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.contact form .input-box .input-field {
+    justify-content: center;
+    position: relative;
+    width: 90%;
+    height: 3rem;
+
+    margin-bottom: 1rem;
+    margin: .8rem 0;
+}
+.contact form .input-box .input-field input,
+.contact form .textarea-field textarea {
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    font-size: 1.6em;
+    color: var(--text-color);
+    background: transparent;
+    border-radius: .6rem;
+    border: .2rem solid rgb(0, 110, 255);
+}
+
+.contact form .input-box .input-field .input::placeholder,
+.contact form .textarea-field textarea::placeholder {
+    color: var(--text-color);
+}
+
+.contact form .focus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--second-bg-color);
+    border: .6rem;
+    z-index: -1;
+    transition: .5s;
+}
+.contact form .input-box .input-field input:focus~.focus,
+.contact form .input-box .input-field input:valid~.focus,
+.contact form .textarea-field textarea:focus~.focus,
+.contact form .textarea-field textarea:valid~.focus {
+    width: 100%;
+}
+
+
+
+
+.contact form .textarea-field {
+    position: relative;
+    margin: .8rem 0 2.7rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+ .contact .error-txt{
+    font-size: 14.5px;
+    color: red;
+    top: 0;
+
+ }
+
+
+.contact form .textarea-field textarea {
+    resize: none;
+
+}
+
+.contact form .btn-box.btns .btn {
+    cursor: pointer;
+    z-index: 1;
+
+} 
+
+
+
+ */
+
+
+
+
+.footer {
+justify-content: space-between;
+display: flex; 
+
+
+align-items: center;
+flex-wrap: wrap; 
+padding: 2rem 9%;
+background:#007bff ; 
+opacity: 10rem;
+margin-bottom: 0px;
+
+}
+/* .footer-text h1{
+color: white;
+justify-content: center;
+align-items: center;
+text-align: center;
+text-decoration: underline;
+padding-bottom: 2rem;
+color:blue;
+margin-left: 270px;
+} */
+
+.footer-text p {
+justify-content: center;
+text-align: center;
+font-size: 1.3rem;
+align-items: center;
+color: white;
+margin-left: 270px;
+}
+.footer-iconTop a {
+position: relative;
+display: inline-flex; 
+justify-content: center;
+align-items: center;
+padding: .8rem;
+/* background: rgb(0, 166, 255); */
+border: .2rem solid #112e42 ; 
+border-radius: .6rem;
+/* z-index: 1; */
+overflow: hidden;
+
+}
+.footer-iconTop a::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 0%;
+height: 100%;
+background: #112e42 ; 
+/* z-index: 1; */
+transition: .5s;
+}
+.footer-iconTop a:hover::before {
+width: 100%;
+/* z-index: 1; */
+}
+.footer-iconTop a i {
+font-size: 2.4rem;
+color: #112e42 ; 
+
+}
+.footer-iconTop a:hover i {
+color: rgb(0, 166, 255); 
+}
